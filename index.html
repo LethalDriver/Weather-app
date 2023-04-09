@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Weather App</title>
+   <link rel="stylesheet" href="bootstrap.min.css">   <link rel="stylesheet" href="/static/style.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form class="form-signin">
+        <div class="text-center mb-4">
+          <h1 class="mb-3 font-weight-normal">Pogodynka</h1>
+          <p>Wpisz Adres aby zobaczyć aktualną pogodę</p>
+        </div>
+
+        <div class="text-center mb-4">
+                <span id="icon" style="font-size:50px">⛅</span>
+                <h1 id="temp" class="mb-3 font-weight-normal">-°C</h1>
+                <p id="cityName">---</p>
+              </div>
+      
+        <div class="form-label-group">
+          <input type="address" name="address" id="inputAddress" class="form-control" placeholder="City" required autofocus>
+          <label for="inputAddress">Adres</label>
+        </div>
+      
+        <button id="getBtn" class="btn btn-lg btn-primary btn-block" type="submit">Pobierz</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+      </form>
+
+      <script src="script.js"></script>
+</body>
+</html>
